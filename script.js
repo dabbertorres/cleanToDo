@@ -38,14 +38,14 @@ $(document).ready(function()
 	
 	$("#toDoButton").click(function()
 	{
-		CreateToDo($("input[name=entryForm]").val());
+		CreateToDo($("#toDoForm").val());
 	});
 	
 	$(document).keyup(function(event)
 	{
 		if(event.keyCode == 13)
 		{
-			CreateToDo($("input[name=entryForm]").val());
+			CreateToDo($("#toDoForm").val());
 		}
 	});
 	
