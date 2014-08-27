@@ -1,16 +1,29 @@
 body
 {
-	background: #EDEDED;
+	background: #C9DEFF;
 }
 
-#todoList
+#toDoForm
 {
-	left: 200px;
+	position: absolute;
+	left: 10px;
 	top: 10px;
 }
 
 #toDoButton
 {
-	left: 200px;
+	position: relative;
+	left: 160px;
+	top: 2px;
+}
+
+#toDoList
+{
+	
+}
+
+#toDoList li
+{
+	position: relative;
 	top: 10px;
 }

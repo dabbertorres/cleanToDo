@@ -4,8 +4,8 @@ function CreateToDo(string)
 {
 	if(string.length > 0)
 	{
-		$("ul").append("<li>" + string + "</li>");
-		$("input[name=entryForm]").val("");
+		$("#toDoList").append("<li>" + string + "</li>");
+		$("#toDoForm").val("");
 	}
 }
 
@@ -13,9 +13,8 @@ function SaveList()
 {
 	localStorage.clear();
 	
-	$("#todoList li").each(function(index, li)
+	$("#toDoList li").each(function(index, li)
 	{
-		console.log(index.toString() + ' ' + $(li).text());
 		localStorage.setItem(index.toString(), $(li).text());
 	});
 }
@@ -49,9 +48,15 @@ $(document).ready(function()
 		}
 	});
 	
-	$(document).on("click", "#todoList li", function()
+	$(document).on("click", "#toDoList li", function()
 	{
-		$(this).remove();
+		$(this).animate(
+		{
+			opacity: 0
+		}, 400, "linear", function()
+		{
+			$(this).remove();
+		});
 	});
 	
 	// save list when window exits
