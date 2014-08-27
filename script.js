@@ -4,7 +4,8 @@ function CreateToDo(string)
 {
 	if(string.length > 0)
 	{
-		$("#toDoList").append("<li>" + string + "</li>");
+		var newToDo = $("<li>" + string + "</li>").hide().fadeIn(400, "linear");
+		$("#toDoList").append(newToDo);
 		$("#toDoForm").val("");
 	}
 }
