@@ -5,25 +5,28 @@ body
 
 #toDoForm
 {
-	position: absolute;
-	left: 10px;
-	top: 10px;
+	position: relative;
+	left: 0px;
+	top: 0px;
 }
 
 #toDoButton
 {
 	position: relative;
-	left: 160px;
-	top: 2px;
+	left: 0px;
+	top: 0px;
 }
 
 #toDoList
 {
-	
+	position: relative;
+	left: 0px;
+	top: 0px;
 }
 
 #toDoList li
 {
 	position: relative;
-	top: 10px;
+	left: 0px;
+	top: 0px;
 }
