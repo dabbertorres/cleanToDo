@@ -53,7 +53,8 @@ $(document).ready(function()
 	{
 		$(this).animate(
 		{
-			opacity: 0
+			opacity: 0,
+			left: '+=150px'
 		}, 400, "linear", function()
 		{
 			$(this).remove();
